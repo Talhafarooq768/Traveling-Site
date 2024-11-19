@@ -1,0 +1,206 @@
+/* import google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+
+body {
+  background: linear-gradient(to bottom right, #e3e3e3, #cbc7c7);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+  font-family: "Lato", sans-serif;
+}
+/* Navbar Start */
+.navbar {
+  background: linear-gradient(to bottom, #f5f5dc, #d2b48c) !important;
+  color: #000000;
+}
+/* log */
+#logo {
+  font-family: Satisfy;
+  font-size: 30px;
+  font-weight: 850;
+  text-shadow: 2px 2px 1px rgb(145, 136, 136);
+  color: black;
+  text-shadow: 0px 1px 1px black;
+  margin-bottom: 5px;
+}
+#logo span{
+    color: #fcaf45;
+    text-decoration: underline;
+}
+/*  */
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mynavbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+#mynavbar li {
+  position: relative;
+}
+#mynavbar a {
+  white-space: nowrap;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: black;
+
+  text-decoration: none;
+  transition: color 0.6s ease;
+}
+#mynavbar li:hover a {
+  color: #605c5c;
+}
+.nav-link::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 4px;
+  bottom: 5px;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: rgb(58, 41, 41);
+  visibility: hidden;
+  transition: all 0.6s ease-in-out 0s;
+}
+.nav-link:hover::before {
+  visibility: visible;
+  width: 70%;
+}
+/* About Start */
+.about {
+  background: linear-gradient(to bottom right, #e3e3e3, #c4c1c1) !important;
+}
+.about .main-txt h1 {
+  font-family: Satisfy;
+  text-align: center;
+  margin-top: 30px;
+  font-weight: 600;
+  text-shadow: 2px 1px 1px black;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #fcaf45;
+}
+
+.about {
+  background: #f9f9f9;
+}
+.about .card {
+  border-radius: 10px;
+}
+.about .card img {
+  border-radius: 10px;
+}
+.about h2 {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.about p {
+  font-weight: 500;
+}
+#about-btn {
+  width: 150px;
+  height: 38px;
+  border: none;
+  border-radius: 5px;
+  background: #ffa500;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: 550;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+#about-btn:hover {
+  width: 170px;
+}
+.about .card img {
+  border-radius: 10px;
+  transition: 0.6s;
+}
+.about .card img:hover {
+  transform: scale(1.1);
+}
+.about-travel-agency {
+  text-decoration: underline;
+  font-family: satisfy;
+  font-size: 50px;
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+/* Footer Start */
+#footer {
+  width: 100%;
+  text-align: center;
+}
+
+#footer h3 {
+  font-family: Satisfy;
+  text-transform: capitalize;
+  color: #5e564a;
+  font-weight: 600;
+  text-shadow: 3px 0px 1px black;
+  text-decoration: underline;
+}
+#footer h1 span {
+  color: #ffa500;
+  text-decoration: underline;
+}
+.social-links i {
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  background: black;
+  color: white;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.social-links i:hover.twitter {
+  background-color: #0e71c8;
+  transform: scale(1.1);
+}
+.social-links i:hover.facebook {
+  background-color: #2d4373;
+  transform: scale(1.1);
+}
+.social-links i:hover.intsa {
+  background: linear-gradient(
+    45deg,
+    #405de6,
+    #5851db,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d,
+    #f56040,
+    #f77737,
+    #fcaf45,
+    #ffdc80
+  );
+  transform: scale(1.1);
+}
+.social-links i:hover.youtube {
+  background-color: #cc0000;
+  transform: scale(1.1);
+}
+.social-links i:hover.pintrast {
+  background-color: #8c0615;
+  transform: scale(1.1);
+}
+.copyright {
+  height: 30px;
+  width: 100%;
+}

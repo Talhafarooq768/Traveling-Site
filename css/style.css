@@ -1,0 +1,409 @@
+/* import google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+
+body{
+  background: linear-gradient(to bottom right, #e3e3e3, #cbc7c7); 
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+  font-family: "Lato", sans-serif;
+}
+
+/* Navbar Start */
+.navbar {
+
+  background: linear-gradient(to bottom, #f5f5dc, #d2b48c) !important;
+  color: #000000; 
+}
+
+/* log */
+#logo {
+  font-family: Satisfy;
+  font-size: 30px;
+  font-weight: 850;
+  text-shadow: 2px 2px 1px rgb(145, 136, 136);
+  color: black;
+  text-shadow: 0px 1px 1px black;
+  margin-bottom: 5px;
+}
+
+/* container secodnn class no-padding */
+
+
+/* .navbar-brand {
+  padding-left: 15px; 
+  }
+  
+  .navbar-nav {
+  gap: 35px;
+}
+
+.navbar-nav .nav-item {
+  display: flex;
+  align-items: center;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    }
+    
+    .navbar-collapse {
+  justify-content: space-between;
+  }
+  
+.navbar-nav {
+  margin-left: 20px;
+}
+.nav-item .nav-link {
+  font-size: 16px;
+  font-weight: 550;
+  color: black;
+  letter-spacing: 1px;
+  border-radius: 3px;
+  transition: 0.7s ease;
+}
+
+.nav-item .nav-link:hover {
+  background: #ffa500;
+  color: white;
+} */
+.nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mynavbar ul{
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+#mynavbar li{
+  position: relative;
+}
+#mynavbar a{
+  white-space: nowrap;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: black;
+  
+  text-decoration: none;
+  transition: color 0.6s ease;
+}
+#mynavbar li:hover a{
+  color: #605c5c;
+}
+.nav-link::before{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 4px;
+  bOttom:5px;
+  left: 50%;
+  transform: translate(-50%);
+  background-color:rgb(58, 41, 41);
+  visibility: hidden;
+  transition: all 0.6s ease-in-out 0s;
+}
+.nav-link:hover::before{
+  visibility: visible;
+  width: 70%;
+}
+/* Home Section Start */
+.home {
+  width: 100%;
+  height: 90vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)),
+   url(./style-bg-img/world2.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+.home .content {
+  text-align: center;
+  padding-top: 100px;
+}
+
+.home .content h1 {
+  color: white;
+  font-size: 70px;
+  font-weight: 550;
+  text-shadow: 0px 1px 1px black;
+  margin-top: 5px;
+}
+.home .content h5 {
+  color: white;
+  font-size: 38px;
+  font-weight: 550;
+  text-shadow: 0px 1px 1px black;
+}
+/* hover h1 and h5 and transition start */
+.hover-effect h1{
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+.hover-effect h5 {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+.hover-effect h1::after{
+  content:"";
+  position: absolute;
+  left: 0;
+  bottom: 0;  
+  height: 5px;
+  width: 0;
+  transition: 0.7s ease;
+  background-color: #ffa500;
+}
+.hover-effect h5::after {
+  content: "";
+  position: absolute;
+  /* left: 0;*/
+  right: 0;
+  bottom: 0;
+  height: 5px;
+  width: 0;
+  transition: 0.7s ease;
+  background-color: #ffa500;
+}
+
+.hover-effect h1:hover::after{
+    width: 100%;
+}
+.hover-effect h5:hover::after {
+  width: 100%;
+}
+.hover-effect span {
+  color: #ffa500;
+  text-decoration: none;
+}
+/*  */
+.home .content p {
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  text-shadow: 0px 1px 1px black;
+  margin-bottom: 30px;
+  margin-top: 5px;
+}
+.home .content a {
+  padding: 10px;
+  background: white;
+  color: black;
+  letter-spacing: 2px;
+  font-weight: 550;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.content a:hover {
+  background: #ffa500;
+  color: white;
+}
+/* Section Packages Start */
+.main-txt h1 {
+  text-align: center;
+  margin-top: 30px;
+  font-weight: 600;
+  text-shadow: 0px 1px 1px black;
+  text-decoration: underline;
+}
+.main-txt h1 span {
+  color: #ffa500;
+  text-decoration: underline;
+}
+.packages .card {
+  border-radius: 5px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.packages .card img {
+  border-radius: 5px;
+}
+.packages .card img {
+  border-radius: 10px;
+  transition: 0.9s;
+}
+.packages .card img:hover {
+  transform: scale(1.1);
+}
+
+.packages .card .card-body h3 {
+  font-size: 25px;
+  font-weight: 600;
+}
+.packages .card .card-body p {
+  font-size: 15px;
+}
+.checked {
+  color: #ffa500;
+}
+.star i {
+  font-size: 15px;
+}
+.packages .card .card-body h6 {
+  font-size: 20px;
+}
+.packages .card .card-body a {
+  padding: 10px;
+  background: rgb(162, 166, 162);
+  color: black;
+  letter-spacing: 2px;
+  font-weight: 550;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.packages .card .card-body a:hover {
+  background: #ffa500;
+  border-color: #2d4373;
+  color: white;
+}
+/* Section Services Start */
+.services {
+  margin-top: 50px;
+}
+.services .card {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+  border: none;
+  cursor: pointer;
+}
+.services .card:hover{
+  background: linear-gradient(to bottom right, #f0f0f0, rgb(171, 162, 114)); 
+  transition: 0.1s;
+
+}
+.services .card i {
+  font-size: 80px;
+  text-align: center;
+  color: #ffa500;
+  margin-top: 20px;
+}
+.services .card i:hover{
+  color: rgb(212, 195, 96);
+}
+.services .card .card-body h3 {
+  font-weight: 600;
+}
+.services .card .card-body {
+  text-align: center;
+}
+/* Section Gallary Start */
+.gallary {
+  margin-top: 50px;
+}
+
+.gallary .card {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  cursor: pointer;
+}
+
+.gallary .card,h3,span {
+  text-decoration: underline;
+  color: #ffa500;
+}
+
+.gallary .card img {
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.gallary .card img:hover {
+  transform: scale(1.1);
+}
+/* about section */
+.about-travel-agency {
+  text-decoration: underline;
+  font-family: satisfy;
+  text-transform: capitalize;
+  font-size: 50px;
+  cursor: pointer;
+  transition: 0.6s;
+}
+#about-btn {
+  width: 150px;
+  height: 38px;
+  border: none;
+  border-radius: 5px;
+  background: #ffa500;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: 550;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+#about-btn:hover {
+  width: 220px;
+  transition: 0.8s;
+}
+/* Footer Start */
+#footer {
+  width: 100%;
+  text-align: center;
+  background: #f9f9f9;
+}
+#footer{
+  background:linear-gradient(to bottom right, #e3e3e3, #868585) !important; 
+
+}
+#footer h1 {
+  font-family: satisfy;
+  text-transform: uppercase;
+  font-size: 45px;
+  font-weight: 600;
+  text-shadow: 0px 0px 1px black;
+  text-decoration: underline;
+}
+#footer h1 span {
+  color: #ffa500;
+  text-decoration: underline;
+}
+.social-links i {
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  background: black;
+  color: white;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.social-links i:hover.twitter {
+  background-color: #0e71c8;
+  transform: scale(1.1);
+}
+.social-links i:hover.facebook {
+  background-color: #2d4373;
+  transform: scale(1.1);
+}
+.social-links i:hover.intsa {
+  background: linear-gradient(
+    45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d, #f56040, #f77737, #fcaf45, #ffdc80
+  );
+  transform: scale(1.1);
+}
+.social-links i:hover.youtube {
+  background-color: #cc0000;
+  transform: scale(1.1);
+}
+.social-links i:hover.pintrast {
+  background-color: #8c0615;
+  transform: scale(1.1);
+}
+.copyright{
+  height: 30px;
+  width: 100%;
+}
